@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>POST</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="CSS/home.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/post.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/messages.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="resources/RISKWATCH.png" type="image/gif" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="SCRIPT/post.js"></script>
+  <script src="SCRIPT/script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body style=' background-image: url("resources/city2.jpg"); background-repeat: no-repeat; background-size: cover;'>
+  
+  <div class="account" id="w_account">
+    <a onclick="toggleLogin()" style="cursor: pointer;">LOG IN</a> | <a onclick="toggleSignup()"
+      style="cursor:pointer;">SIGN UP</a>
+  </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style= "background: rgba( 255, 255, 255, 0.25 ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );">
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars" onclick="openSidebar()"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+        <img
+          src="resources/RISKWATCH.png"
+          height="60"
+          alt="RW Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-brand" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="navbar-brand" href="post.html">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="map.html">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="cont.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div>
+    <polygon class="form">
+      <form action="" id="postform">
+        <input type="text" class="mess" name="Message" placeholder="WRITE MESSAGE HERE" id="message" autocomplete="off" >
+        <input type="text" class="name" name="Name" placeholder="NAME" id="name" autocomplete="off" >
+        <input type="text" class="area" name="Area" placeholder="AREA" id="area" autocomplete="off" >
+        <button type="button" class="btn" name="post_message" id="postbutton" onclick="postMessage()">POST</button>
+      </form>
+    </polygon>
+    
+    <polygon class="watcher">
+      <H3 ID="postwatcher">HOURLY WATCHERS</H3>
+      <article>
+        <details>
+          <summary>Ruben Banaga</summary>
+          <p>3 posts today</p>
+        </details>
+        <details>
+          <summary>Vince Tagalag</summary>
+          <p>2 posts today</p>
+        </details>
+        <details>
+          <summary>Austin Matic</summary>
+          <p>69 posts today</p>
+        </details>
+        <details>
+          <summary>Lorenzo Reed</summary>
+          <p>69 posts today</p>
+        </details>
+        <details>
+          <summary>Christian Pagtalunan</summary>
+          <p>100 posts today</p>
+        </details>
+      </article>
+    </polygon>
+    <div class="posts">
+      <div class="post">
+        <img class="post-author-logo" src="resources/person.png" />
+        <div class="post-message">
+          <div class="post-header">
+            <div class="post-author-name">
+              Ruben Banaga
+            </div>
+            <div class="post-author-area">
+              Rafaela Homes
+            </div>
+            <div class="post-publish-time">
+              2m
+            </div>
+          </div>
+          <div class="post-content">
+            Nandito ako sa Rafaela Homes, umuulan.
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <img class="post-author-logo" src="resources/person.png" />
+        <div class="post-message">
+          <div class="post-header">
+            <div class="post-author-name">
+              Vince Tagalag
+            </div>
+            <div class="post-author-area">
+              Casa Buena
+            </div>
+            <div class="post-publish-time" id="time">
+              10m
+            </div>
+          </div>
+          <div class="post-content">
+            Kaya nga eh, ang lakas grabe! sheesh
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <img class="post-author-logo" src="resources/person.png" />
+        <div class="post-message">
+          <div class="post-header">
+            <div class="post-author-name">
+              Austin Matic
+            </div>
+            <div class="post-author-area">
+              Tapat ng Barangay Hall
+            </div>
+            <div class="post-publish-time" id="time">
+              30m
+            </div>
+          </div>
+          <div class="post-content">
+            Punta na kayo dito, sa may evacuation site. Ingat kayo guys!
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <img class="post-author-logo" src="resources/person.png" />
+        <div class="post-message">
+          <div class="post-header">
+            <div class="post-author-name">
+              Christian Pagtalunan
+            </div>
+            <div class="post-author-area">
+              Malapit sa Barangay Hall
+            </div>
+            <div class="post-publish-time" id="time">
+              45m
+            </div>
+          </div>
+          <div class="post-content">
+            Maraming supply ng relief goods dito!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

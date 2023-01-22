@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #E8DFCA;
+  overflow-x: hidden;
+}
+
+/*MAIN HOME PAGE*/
+
+/* MAIN CONTENT */
+
+.national {
+  position: absolute;
+  width: 29%;
+  height: 524px;
+  top: 50%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  background: #AEBDCA;
+  border-radius: 45px;  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.local {
+  position: absolute;
+  width: 29%;
+  height: 524px;
+  top: 50%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #AEBDCA;
+  border-radius: 45px;
+}
+
+.maincontent .national H1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.maincontent .national H2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.maincontent .national .h4 {
+  text-align: center;
+  cursor: pointer;
+}
+.maincontent .national H4 {
+  text-align: center;
+  cursor: pointer;
+}
+.maincontent .national .h4:hover{
+  color: white;
+}
+
+.maincontent .local H1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.maincontent .local H2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.maincontent .local H4 {
+  text-align: center;
+}
+
+.description{
+  width: 100%;
+  font-weight: bold;
+  padding: 30px;
+  line-height: 1.3;
+  font-size: 20px;
+  justify-content: center;
+text-align: justify;
+}
+.local h4:hover{
+  color: white;
+}
+.local .H4{
+  cursor: pointer;
+}

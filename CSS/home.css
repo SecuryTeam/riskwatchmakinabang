@@ -1,0 +1,358 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url("../resources/city2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/*SIDEBAR*/
+.sidebar {
+  display: none;
+}
+.sidemenu ul{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.sidemenu a{
+  text-decoration: none;
+  margin-top: 30%;
+  font-size: 20px;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 4px 8px;
+}
+
+.sidemenu a:hover {
+  color: white;
+  background-color: black;
+  transition: .5s;
+}
+
+
+/* NAVIGATION BAR */
+.header {
+  display: block;
+  position: absolute;
+  width: 65%;
+  height: 7.5%;
+  top: 7%;
+  background: #AEBDCA;
+  border-radius: 0.9em;
+  margin-left: 19%;
+}
+
+.header ul#menu li{
+  display: inline;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+  margin-left: 90px;
+  margin-top: 200px;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.header ul#menu li a{
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 4px 8px;
+  top:5%;
+  
+}
+
+.header ul#menu li a.active {
+  color: white;
+  background-color: black;
+}
+
+.header ul#menu li a:hover {
+  color: white;
+  background-color: black;
+  transition: .5s;
+}
+
+.account {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.account a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+div#logo img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 8%;
+  cursor: pointer;
+}
+
+/*-------------------------------MAIN CONTENT------------------------------------------*/
+
+/* CARDS SA GITNA */
+
+.maincontent    {
+	display: block;
+	align-items: center;
+	justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.login {
+  width: 26.5%;
+  height: 45%;
+  position: absolute;
+  top: 20%;
+  left: 19%;
+	overflow: hidden;
+	border-radius: 45px;  
+	text-decoration: none;
+	background: #AEBDCA;
+	margin: 1em;
+	padding: 2.75em 2.5em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	transition: transform 0.45s ease, background 0.45s ease;
+  cursor: pointer;
+}
+
+.login h3 {
+	color: #2e3c40;
+	font-size: 3.5em;
+	font-weight: 600;
+	line-height: 1;
+	padding-bottom: 0.5em;
+	margin: 0 0 0.142857143em;
+	border-bottom: 2px solid #753bbd;
+	transition: color 0.45s ease, border 0.45s ease;
+}
+
+.login h4 {
+	 color: #627084;
+	 text-transform: uppercase;
+	 font-size: 1.125em;
+	 font-weight: 700;
+	 line-height: 1;
+	 letter-spacing: 0.1em;
+	 margin: 0 0 1.777777778em;
+	 transition: color 0.45s ease;
+}
+.login p {
+	 opacity: 0;
+	 color: #fff;
+	 font-weight: 600;
+	 line-height: 1.8;
+	 margin: 0 0 1.25em;
+	 transform: translateY(-1em);
+	 transition: opacity 0.45s ease, transform 0.5s ease;
+}
+.login .link-text {
+	 display: block;
+	 color: #753bbd;
+	 font-size: 1.2em;
+	 font-weight: 600;
+	 line-height: 1.2;
+	 margin: auto 0 0;
+	 transition: color 0.45s ease;
+  padding-top: 50px;
+}
+.login .link-text svg {
+	 margin-left: 0.5em;
+	 transition: transform 0.6s ease;
+}
+.login .link-text svg path {
+	 transition: fill 0.45s ease;
+}
+.login:hover {
+	 background: #7895B2;
+	 transform: scale(1.05);
+}
+.login:hover h3 {
+	 color: #fff;
+	 border-bottom-color: #a754c4;
+}
+.login:hover h4 {
+	 color: #fff;
+}
+.login:hover p {
+	 opacity: 1;
+	 transform: none;
+}
+.login:hover .link-text {
+	 color: #fff;
+}
+.login:hover .link-text svg {
+	 animation: point 1.25s infinite alternate;
+}
+.login:hover .link-text svg path {
+	 fill: #fff;
+}
+.signup {
+  flex-direction: column;
+  width: 26.5%;
+   position: absolute;
+   top: 20%;
+   left: 53%;
+  height: 45%;
+  overflow: hidden;
+  border-radius: 45px;  
+  text-decoration: none;
+  background: #AEBDCA;
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: transform 0.45s ease, background 0.45s ease;
+  cursor: pointer;
+}
+.signup h3 {
+  color: #2e3c40;
+  font-size: 3.5em;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid #753bbd;
+  transition: color 0.45s ease, border 0.45s ease;
+}
+.signup h4 {
+  color: #627084;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color 0.45s ease;
+}
+.signup p {
+  opacity: 0;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+.signup .link-text {
+  display: block;
+  color: #753bbd;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+  padding-top: 50px;
+}
+.signup .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+.signup .link-text svg path {
+  transition: fill 0.45s ease;
+}
+.signup:hover {
+  background: #7895B2;
+  transform: scale(1.05);
+}
+.signup:hover h3 {
+  color: #fff;
+  border-bottom-color: #a754c4;
+}
+.signup:hover h4 {
+  color: #fff;
+}
+.signup:hover p {
+  opacity: 1;
+  transform: none;
+}
+.signup:hover .link-text {
+  color: #fff;
+}
+.signup:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+.signup:hover .link-text svg path {
+  fill: #fff;
+}
+
+/* footer */
+.maincontent .description {
+  position: absolute;
+  width: 65%;
+  height: 20%;
+  left: 19%;
+  top: 788px;
+
+  background: #AEBDCA;
+  border-radius: 45px;
+}
+
+
+/*Media Query*/
+@media (max-width: 1420px) {
+  html {
+    font-size: 60%;
+  }
+  
+  .header {
+    display: none;
+  }
+
+  .sidebar{
+    display: block;
+  }
+
+  .sidebar:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  div#logo img{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 1%;
+    margin-bottom: 5%;
+    left: 43%;
+    cursor: pointer;
+  }
+
+  #postbutton {
+    position: absolute;
+    top: 16%;
+    height: 11%;
+    width: 5%;
+  }
+
+  #sendicon {
+    display: inline;
+    margin-left: 10%;
+    cursor: pointer;
+    height: 20%;
+    width: 20%;
+    bottom: 5%;
+  }
+}
+
+/*CAPATCHA*/
+
+#recaptcha > div {
+  margin: 0 auto .5em;
+}

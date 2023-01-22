@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RiskWatch | HOME</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="CSS/home.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/card.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/footer.css" rel="stylesheet" type="text/css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="shortcut icon" href="resources/RISKWATCH.png" type="image/gif" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+</head>
+
+<body>
+<!--   NAV BAR -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style= "background: rgba( 255, 255, 255, 0.25 ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 ); position: sticky;">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars" onclick="openSidebar()"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+            <img src="resources/RISKWATCH.png" height="60" alt="RW Logo" loading="lazy" />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar-item">
+              <a class="navbar-brand" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="navbar-brand" href="post.html">Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="cont.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="account" id="w_account">
+    <a onclick="toggleLogin()" style="cursor: pointer;">LOG IN</a> | <a onclick="toggleSignup()"
+      style="cursor:pointer;">SIGN UP</a>
+  </div>
+  <div class="maincontent">
+    <polygon class="login" onclick="toggleLogin()">
+      <h3>LOG IN</h3>
+      <h4>Watchers</h4>
+      <p>START POSTING
+        AND BECOME A
+        VOLUNTEER</p>
+      <span class="link-text">
+        Click to Log In
+        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+            fill="#753BBD" />
+        </svg>
+      </span>
+    </polygon>
+    <polygon class="signup" onclick="toggleSignup()">
+      <h3>SIGN UP</h3>
+      <h4>Volunteers</h4>
+      <p>BECOME A RISK WATCHER TODAY!</p>
+      <span class="link-text">
+        Click to Sign Up
+        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+            fill="#753BBD" />
+        </svg>
+    </polygon>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="SCRIPT/script.js"></script>
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Application Development</a></li>
+              <li><a href="#">Security Systems</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Goal</a></li>
+              <li><a href="https://github.com/SecuryTeam/riskwatchmakinabang" target="_blank">Source Code</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>SecuriTeam</h3>
+              <p>We are a Software Developing Team that aims to provide safety of our users. We believe in providing secure and reliable website solutions that protect our users from potential online and offline threats. Our team of experienced professionals specializes in developing websites with the latest security protocols. We also provide comprehensive security solutions and services, such as penetration testing, vulnerability scanning, and security audits, to help our clients stay secure in their online endeavors. We are committed to delivering secure and reliable applications that are tailored to meet the specific needs of each of our clients.</p>
+          </div>
+          <div class="col item social" ><a href="https://www.facebook.com/profile.php?id=100089656091512" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/securi_team" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://github.com/SecuryTeam" target="_blank"><i class="icon ion-social-github"></i></a><a href="https://www.youtube.com/channel/UC76OUHhSKp3oBmQR37i2lSw" target="_blank"><i class="icon ion-social-youtube"></i></a></div>
+          </div>
+      <p class="copyright">SecuriTeam © 2023</p>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+
+</html>

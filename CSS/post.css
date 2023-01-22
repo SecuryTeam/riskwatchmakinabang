@@ -1,0 +1,127 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #e7f3f1;
+}
+
+/* MAIN CONTENT */
+
+.form {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  left: 34%;
+  top: 20%;
+  margin-bottom: 10%;
+  background: #AEBDCA;
+  border-radius: 20px;  
+}
+
+.watcher {
+  position: absolute;
+  width: 12%;
+  height: 55%;
+  left: 19.7%;
+  top: 25%;
+  background: #AEBDCA;
+  border-radius: 20px;
+  margin-right: 5%;
+}
+
+.posts {
+  position: absolute;
+  background: #AEBDCA;
+  border-radius: 10px;  
+  display: block;
+  top: 45%;
+  margin-left: 33.5%;
+  width: 40%;
+}
+
+.form .message {
+  box-sizing: border-box;
+  position: absolute;
+  width: 578px;
+  height: 49px;
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+
+input[type=text]#message {
+  margin-top: 4%;
+  margin-left: 6%;
+  box-sizing: border-box;
+  position: absolute;
+  width: 85%;
+  height: 18%;
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+input[type=text]#name{
+  box-sizing: border-box;
+  position: absolute;
+  width: 35%;
+  height: 20%;
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin-top: 16%;
+  margin-left: 6%;
+  top: 16%;
+  padding: 12px 20px;
+}
+
+input[type=text]#area{
+  box-sizing: border-box;
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin-top: 16%;
+  margin-left: 50%;
+  top: 16%;
+  padding: 12px 20px;
+}
+
+#postbutton {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90%;
+  line-height: 35px;
+  color: #000000;
+  background-color: transparent;
+  margin-left: 82.5%;
+  margin-top: 19%;
+  border-radius: 20px;
+  cursor: pointer;
+  top: 15%;
+  height: 15%;
+  width: 9%;
+}
+
+#postbutton:hover {
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
+
+.posts H1 {
+  margin-left: 10px;
+}
+
+.posts H3,p {
+  text-align: center;
+}
+
+.watcher H3 {
+  margin-top: 5px;
+  text-align: center;
+}
+
