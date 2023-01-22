@@ -10,7 +10,7 @@ This website is an infomative Social Platform which residents of makinabang can 
 
 ## PROJECT DESCRIPTION
 
-This project is open source and free-to-use for educational, and NOT Commercial Use in any way. 
+This project is open source and free-to-use for educational, but NOT for Commercial Use. 
 
 The website is part of a school project promoting safety during calamities with the use of Social Platforms and Websites.
 
