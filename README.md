@@ -6,7 +6,8 @@ This website is an infomative Social Platform which residents of makinabang can 
 ## Authors
 
 - [@JayM](https://www.github.com/J4YM)
-
+- [@Christian](https://www.github.com/Christian13th)
+- [@Austin](https://www.github.com/MBGA04)
 
 ## PROJECT DESCRIPTION
 
