@@ -8,6 +8,7 @@ This website is an infomative Social Platform which residents of makinabang can 
 - [@JayM](https://www.github.com/J4YM)
 - [@Christian](https://www.github.com/Christian13th)
 - [@Austin](https://www.github.com/MBGA04)
+- [@Jetris](https://www.github.com/VinceJetris)
 
 ## PROJECT DESCRIPTION
 
