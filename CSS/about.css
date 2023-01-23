@@ -1,6 +1,23 @@
 html {
-  background-image: url("resources/stibaliuag.jpg");
-  background-repeat: no-repeat;
+  
+}
+
+.maincontent {
+	display: block;
+	align-items: center;
+	justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.maincontent .description {
+  position: absolute;
+  width: 65%;
+  height: 20%;
+  left: 19%;
+  top: 788px;
+
+  background: #AEBDCA;
+  border-radius: 45px;
 }
 
 section{
