@@ -2,7 +2,6 @@
 
 This website is an Infomative Social Platform which residents of makinabang can use to ensure the safety of others and give important information before, during, and after a calamity.
 
-
 ## Authors
 
 - [@Rubs](https://www.github.com/J4YM)
@@ -27,3 +26,8 @@ This is a part of a Research Project concerning the relationship between:
  - [Leaflet](https://leafletjs.com/)
  - [IonIcons](https://ionic.io/ionicons)
  - [Made using Repl.it](https://replit.com/)
+
+
+## DISCLAIMER
+
+**AS OF THE MOMENT**, Account credentials for Admins and Volunteers are manually registered by Website Developers.
